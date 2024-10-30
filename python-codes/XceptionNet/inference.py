@@ -7,13 +7,13 @@ import keras.utils as image
 from keras.models import load_model
 import pandas as pd
 
-style_gan2 = glob.glob('/Users/shrutihouji/Downloads/000000/*.png')
+style_gan2 = glob.glob('/Users/spetapa/Downloads/000000/*.png')
 total = 1000
 
 def main():
 
     #creating model
-    model = models.load_model('/Users/shrutihouji/Downloads/XceptionNet/result1/model_fine_final.h5')
+    model = models.load_model('/Users/spetapa/Downloads/XceptionNet/result1/model_fine_final.h5')
 
     classes = []
     with open(f'classes.txt', 'r') as f:
