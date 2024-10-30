@@ -220,7 +220,7 @@ def main(args):
     model.save(os.path.join(args.result_root, 'model_fine_final.h5'))
 
     #creating the loss and the accuracy graph.
-    model = models.load_model('/Users/shrutihouji/Downloads/XceptionNet/result2/model_pre_final.h5')
+    model = models.load_model('/Users/spetapa/Downloads/XceptionNet/result2/model_pre_final.h5')
     hist_pre = model 
     acc = hist_pre.history['accuracy']
     val_acc = hist_pre.history['val_accuracy']
